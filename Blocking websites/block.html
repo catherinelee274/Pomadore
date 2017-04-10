@@ -1,0 +1,65 @@
+<!DOCTYPE.html> 
+<html>
+<head>
+<meta charset=utf-8/>
+</head>
+<body>
+		<h1>List of pages</h1>
+		<input id="title" type="text">
+		<input type="submit" value="Add Page" onclick="insert()" />
+		<div id="display"></div>
+	
+	<script type="text/javascript">
+			var titles = [];
+			var titleInput  = document.getElementById("title");
+			var messageBox  = document.getElementById("display");
+			var search_text = "https://www.facebook.com";
+    
+
+			function Allow(){
+			if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="") {
+			user.title.value="";
+			alert("Please Enter only alphabets");
+			}
+		}
+
+			function insert() {
+			titles.push(titleInput.value);
+			clearAndShow();
+			//var titleInput  = document.getElementById("title");
+			//if (titleInput=''){
+				//blockweb();
+			//}
+			//window.location.replace("http://www.google.com");
+		}
+			
+			function clearAndShow () {
+			titleInput.value = "";
+			messageBox.innerHTML = "";
+			messageBox.innerHTML += "Pages: " + titles.join(", ") + "<br/>";
+		}
+		
+		function redirect (){
+			window.location.replace("google.com");
+			return false;
+			}
+		
+		
+		function checkAnswer() {
+		var response = document.getElementById('title').value;
+		for (var i= 0; i< title.length; i++){
+			if (response == titles[i] );
+				window.location.assign("http://www.google.com")
+				}
+			
+			//<a href="" id="search_text">hiiii</a>
+			//for (var i=0; i < titles.length; i++) {
+			//	if(search_text == titles[i]) {
+				//window.location.replace("http://www.google.com");
+			
+				
+				
+				}
+</script>					
+</body>			
+</html>
