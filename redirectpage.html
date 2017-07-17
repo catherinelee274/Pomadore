@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="module"> 
+<header>
+<h1 align = "center"; style="font-family:helvetica;"><font size = "+10"> ACCESS DENIED:</h1></font>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<br> </br>
+<h1 align = "center"; style="font-family:helvetica;"><font size = "6"> <font color = "white">looks like your tomato's not fully ripe yet.</h1></font>
+
+<img src = "spin.gif"> 
+</header>
+
+  
+</div>
+<style>
+img 
+{ 
+position:absolute; 
+left:525px; 
+top:170px; 
+z-index:999; 
+} 
+
+.header img {
+  z-index: 2;
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+body {
+    background-image: url("bg.jpg");
+	
+}
+.module {
+  background: url(sping.gif);
+  background-attachment: fixed;
+  width: 70;
+  align: center;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+  margin: 35px;
+}
+.module > header {
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.module > header::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.module > header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55)
+}
+.module > header > h1 {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+</style>
